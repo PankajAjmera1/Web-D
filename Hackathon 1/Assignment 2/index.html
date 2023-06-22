@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+
+            <div class="logo">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/571e5943-4616-4654-bf99-10b3c98f8686/d98301o-426f05ca-8fe5-4636-9009-db9dd1fca1f3.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzU3MWU1OTQzLTQ2MTYtNDY1NC1iZjk5LTEwYjNjOThmODY4NlwvZDk4MzAxby00MjZmMDVjYS04ZmU1LTQ2MzYtOTAwOS1kYjlkZDFmY2ExZjMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0._SlX6x3jb9hDMoBDw92f_N0pVlwkrn-bMncfkRdFDXo"
+                    class="logo-img" alt="Logo">
+                <ul>
+                    <li>Spotify</li>
+                    <li>Favourites</li>
+
+                </ul>
+            </div>
+            <div class="nav-search">
+                <div class="search-icon">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+                <input type="text" placeholder="   Search.." class="search-input">
+                <div class="microphone">
+                    <i class="fa-solid fa-microphone"></i>
+                </div>
+            </div>
+            <div class="bell">
+                <i class="fa-solid fa-bell"></i>
+            </div>
+            <div class="sign-in">
+
+            </div>
+        </div>
+
+    </header>
+   
+
+
+
+    <main>
+        <!-- aside section 1 -->
+        <aside class="aside section-1">
+            <!-- this is for the upper -->
+            <div class="outer-upper">
+                <div class="upper">
+                    
+
+                    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/d8adba54281455.5954cd8dc18cf.jpg"
+                        alt="1st">
+                    <img src="https://wallpapercave.com/wp/wp9403174.jpg"
+                        alt="2nd">
+                    <img src="https://img.freepik.com/free-vector/silhouette-excited-audience-colourful-music-notes-background_1048-14332.jpg?w=826&t=st=1687409560~exp=1687410160~hmac=aa7054e06219c77576a62c3df08f91068c5a06b790df39de65f40ce8a892348f"
+                        alt="3rd">
+
+
+                </div>
+            </div>
+            <!-- this is the latest release section -->
+            <div class="latest-release">
+                <h1 style="margin-bottom: 12px;">
+                    Latest Release
+                </h1>
+                <!-- this is the content of the latest release section -->
+                <!-- it will contain the "cards" -->
+                <div class="latest-release-content">
+                    <!-- first card -->
+                    <div class="card">
+                        <div>
+                            <!-- image corresponding to the card -->
+                            <img src="https://imagescdn.junodownload.com/full/CS3974696-02A-BIG.jpg">
+                            <!-- play button, which will be shown on hover on the card image -->
+                            <div class="play-button">
+
+                                <i class="fas fa-play" style="width:100%; height:100%; display:inline-block"></i>
+                            </div>
+                        </div>
+                        <!-- it will contain the name and date of release of the song -->
+                        <div class="song-description">
+                            <h3>
+                                Perfect
+                            </h3>
+                            
+                            <p >
+                                Dec 22,2020
+                            </p>
+                        </div>
+                        <div class="time">
+                        <p >
+                            4:44
+                        </p>
+                    </div>
+                    </div>
+                    <!-- second card -->
+                    <div class="card">
+                        <div>
+                            <img src="https://i.pinimg.com/originals/74/e4/a5/74e4a5cd0dd25528644c34e3881d9233.jpg">
+                            <div class="play-button">
+                                <i class="fas fa-play" style="width:100%; height:100%; display:inline-block"></i>
+                            </div>
+                        </div>
+                        <div class="song-description">
+                            <h3>
+                                Intentions
+                            </h3>
+                            <p>
+                                Dec
+                                22,2020
+                            </p>
+                        </div>
+                        <div class="time">
+
+                        <p>
+                            4:44
+                        </p>
+                    </div>
+
+
+                    </div>
+                    <!-- Third Card -->
+
+                    <div class="card">
+                        <div>
+                            <img src="https://i.scdn.co/image/ab6761610000e5eb6c93e692ef9efd0f27cde996">
+                            <div class="play-button">
+                                <i class="fas fa-play" style="width:100%; height:100%; display:inline-block"></i>
+                            </div>
+                        </div>
+                        <div class="song-description">
+                            <h3>
+                                Intentions
+                            </h3>
+                            <p>
+                                Dec
+                                22,2020
+                            </p>
+                        </div>
+                        <div class="time">
+
+                        <p>
+                            4:44
+                        </p>
+                    </div>
+
+                    </div>
+                    <!-- Fourth -->
+                    <div class="card">
+                        <div>
+                            <img src="https://i.scdn.co/image/ab67616d0000b2736b5e89ef5653cd14b3ee4e1f">
+                            <div class="play-button">
+                                <i class="fas fa-play" style="width:100%; height:100%; display:inline-block"></i>
+                            </div>
+                        </div>
+                        <div class="song-description">
+                            <h3>
+                                Intentions
+                            </h3>
+                            <p>
+                                Dec
+                                22,2020
+                            </p>
+                        </div>
+                        <div class="time">
+
+                        <p>
+                            4:44
+                        </p>
+                    </div>
+
+                    </div>
+                    <!-- Fifth -->
+                    <div class="card">
+                        <div>
+                            <!-- image corresponding to the card -->
+                            <img src="https://i1.sndcdn.com/artworks-000310475955-mejwo7-t500x500.jpg">
+                            <!-- play button, which will be shown on hover on the card image -->
+                            <div class="play-button">
+
+                                <i class="fas fa-play" style="width:100%; height:100%; display:inline-block"></i>
+                            </div>
+                        </div>
+                        <!-- it will contain the name and date of release of the song -->
+                        <div class="song-description">
+                            <h3>
+                                Perfect
+                            </h3>
+                            <p>
+                                Dec 22,2020
+                            </p>
+                        </div>
+                        <div class="time">
+
+                        <p>
+                            4:44
+                        </p>
+                    </div>
+
+                    </div>
+                    <!-- sixth -->
+                    <div class="card">
+                        <div>
+                            <!-- image corresponding to the card -->
+                            <img src="https://i.scdn.co/image/ab67616d0000b273bacae040201f6cab0b12e1e5">
+                            <!-- play button, which will be shown on hover on the card image -->
+                            <div class="play-button">
+
+                                <i class="fas fa-play" style="width:100%; height:100%; display:inline-block"></i>
+                            </div>
+                        </div>
+                        <!-- it will contain the name and date of release of the song -->
+                        <div class="song-description">
+                            <h3>
+                                Perfect
+                            </h3>
+                            <p>
+                                Dec 22,2020
+                            </p>
+                        </div>
+                        <div class="time">
+
+                        <p>
+                            4:44
+                        </p>
+                    </div>
+
+                    </div>
+                    
+                    </div>
+
+
+                    <!-- Popular Artists -->
+                    <div class="p-a">
+                        <h2 style="margin-bottom: 12px">Popular Artists</h2>
+                        <div class="p-c">
+                            <div class="a-icons">
+                                <img src="https://sirfjatt.net/wp-content/media/artist-thumb/Arijit%20Singh.jpg " alt="">
+                                <h3>Arijit Singh </h3>
+                            </div>
+                            <div class="a-icons">
+                                <img src="https://i.scdn.co/image/ab67616d0000b273e9a96ad1b17f645add3bacaa " alt="">
+                                <h3>Baadshah</h3>
+                            </div>
+                            <div class="a-icons">
+                                <img src="https://3.bp.blogspot.com/-5eS1MuC_nVU/T0mYm1fFAhI/AAAAAAAABMM/FovYHdcHEUk/s400/Shaan-shantanu-famous-bolly-singer-indian-bollywood-music-6527526-500-500.jpg " alt="">
+                                <h3>KK</h3>
+                            </div>
+                            <div class="a-icons">
+                                <img src="https://usercontent1.hubstatic.com/12723000_f496.jpg " alt="">
+                                <h3>Lane Brody</h3>
+                            </div>
+                            <div class="a-icons">
+                                <img src="https://s.yimg.com/fz/api/res/1.2/rnAh_aenCTuNo6k79.XzJw--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0yNDA7cHhvZmY9MDtweW9mZj0wO3E9ODA7dz0yNDA-/https://s.yimg.com/zb/imgv1/d3a2b3b6-3f6f-375f-862b-cd7b8901ff91/s_500x500 " alt="">
+                                <h3>Shawn</h3>
+                            </div>
+                            <div class="a-icons">
+                                <img src="https://s.yimg.com/fz/api/res/1.2/pjSyyqMCbWUzeDJBJd2fNA--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0yNDA7cHhvZmY9MDtweW9mZj0wO3E9ODA7dz0yNDA-/https://s.yimg.com/zb/imgv1/8f90f93e-286d-3fcc-9f52-eeb02a3f8477/s_500x500 " alt="">
+                                <h3>Zayn</h3>
+                            </div>
+                            <div class="a-icons">
+                                <img src="https://s.yimg.com/fz/api/res/1.2/F5X998av9AQs1QVWBgNE2g--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0yNDA7cHhvZmY9MDtweW9mZj0wO3E9ODA7dz0yNDA-/https://s.yimg.com/zb/imgv1/ebcec779-75fc-352a-b56f-1f437e017cfe/s_500x500 " alt="">
+                                <h3>Zac</h3>
+                            </div>
+                            <div class="a-icons">
+                                <img src="https://resize.indiatvnews.com/en/resize/newbucket/715_-/2018/11/mv5bmzeyotnlyzcty2y1nc00zmrlltllmjqtmmrlogqyyjg3ztvjxkeyxkfqcgdeqxvyndqxnjcxnq-1543069911.jpg " alt="">
+                                <h3>Lata Mangesh</h3>
+                            </div>
+                            <div class="a-icons">
+                                <img src="https://s.yimg.com/fz/api/res/1.2/Cj9gSgwPk934vjdnYUzpIQ--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0yNDA7cHhvZmY9MDtweW9mZj0wO3E9ODA7dz0yNDA-/https://s.yimg.com/zb/imgv1/00202a02-d52c-3b4c-8747-9a066d2eaf6d/t_500x300 " alt="">
+                                <h3>Bleta Rexha</h3>
+                            </div>
+                            <div class="a-icons">
+                                <img src="https://s.yimg.com/fz/api/res/1.2/sXR2B1AYpKIyuOouu7Fm4A--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0yNDA7cHhvZmY9MDtweW9mZj0wO3E9ODA7dz0yNDA-/https://s.yimg.com/zb/imgv1/42c5b66b-597c-360b-be24-5ecf9dbb7014/s_500x500" alt="">
+                                <h3>Chris</h3>
+                            </div>
+                            <div class="a-icons">
+                                <img src="https://s.yimg.com/fz/api/res/1.2/tPZwt79FW8xxziQtzXwCOw--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0yNDA7cHhvZmY9MDtweW9mZj0wO3E9ODA7dz0yNDA-/https://s.yimg.com/zb/imgv1/49304024-37e2-35f6-8207-6d70f3b858be/s_500x500 " alt="">
+                                <h3>Pia</h3>
+                            </div>
+                            <div class="a-icons">
+                                <img src="https://s.yimg.com/fz/api/res/1.2/kuYTzO7npEgrsjT_PvaKjA--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0yNDA7cHhvZmY9MDtweW9mZj0wO3E9ODA7dz0yNDA-/https://s.yimg.com/zb/imgv1/0408d617-804e-3185-b84a-e3a9df078130/s_500x500 " alt="">
+                                <h3>Beyonce</h3>
+                            </div>
+                            <div class="a-icons">
+                                <img src="https://s.yimg.com/fz/api/res/1.2/iT0cRMCdOHSSJClBR8ss4A--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0yNDA7cHhvZmY9MDtweW9mZj0wO3E9ODA7dz0yNDA-/https://s.yimg.com/zb/imgv1/c75e39cd-0be3-38fb-9f33-c525b535c5ba/s_500x500 " alt="">
+                                <h3>MMichael</h3>
+                            </div>
+                            <div class="a-icons">
+                                <img src="https://s.yimg.com/fz/api/res/1.2/_aijJd9M73ovX99CXDCm1g--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0yNDA7cHhvZmY9MDtweW9mZj0wO3E9ODA7dz0yNDA-/https://s.yimg.com/zb/imgv1/02b270b2-b1e0-3445-8afb-5683da52e37c/s_500x500" alt="">
+                                <h3>KKKaty Perry</h3>
+                            </div>
+                            <div class="a-icons">
+                                <img src="https://s.yimg.com/fz/api/res/1.2/66lM1Zj8XwhLHc3gsGiMuQ--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0yNDA7cHhvZmY9MDtweW9mZj0wO3E9ODA7dz0yNDA-/https://s.yimg.com/zb/imgv1/d1064baa-44c7-3ec6-bb43-ba290803535e/s_500x500 " alt="">
+                                <h3>Harry</h3>
+                            </div>
+                            
+                           
+                        </div>
+                    </div>
+
+
+                    <!-- MMood Songs -->
+
+                    <div class="p-a">
+                      
+                        <div class="p-c-m">
+                            <div class="a-icons">
+                                <img src="https://png.pngtree.com/png-vector/20190215/ourmid/pngtree-new-mood-music-logo-apps-png-image_691919.jpg " alt="">
+                                
+                            </div>
+                            <div class="a-icons">
+                                <img src="https://entodomusiccom.files.wordpress.com/2020/12/retro_songs_collection-_vol._1.png " alt="">
+                                
+                            </div>
+                            <div class="a-icons">
+                                <img src="https://yt3.ggpht.com/a/AGF-l79YZh4qHafChjpt-61gwPeD3RMT49IuQ8aq=s900-c-k-c0xffffffff-no-rj-mo" alt="">
+                            </div>
+                            <div class="a-icons">
+                                <img src="https://i.ytimg.com/vi/y4Q7gqDBbJ4/maxresdefault.jpg " alt="">
+                            </div>
+                            <div class="a-icons">
+                                <img src="https://yt3.ggpht.com/a-/AAuE7mAfJHMQs2qbx4WdNct9dmdCZylRBiqjhaluYA=s900-mo-c-c0xffffffff-rj-k-no" alt="">
+                            </div>
+                            <div class="a-icons">
+                                <img src="https://yt3.ggpht.com/a/AATXAJxXqXi-YZzE3r2JtY-WHpOp74zAKWVaPQO8hA=s900-c-k-c0xffffffff-no-rj-mo " alt="">
+                            </div>
+                            <div class="a-icons">
+                                <img src="https://yt3.ggpht.com/a/AGF-l79YZh4qHafChjpt-61gwPeD3RMT49IuQ8aq=s900-c-k-c0xffffffff-no-rj-mo" alt="">
+                            </div>
+                            <div class="a-icons">
+                                <img src="https://a10.gaanacdn.com/images/albums/63/1710163/crop_480x480_1710163.jpg" alt="">
+                            </div>
+                            <div class="a-icons">
+                                <img src="https://entodomusiccom.files.wordpress.com/2020/12/retro_songs_collection-_vol._1.png " alt="">
+                                
+                            </div>
+                            <div class="a-icons">
+                                <img src="https://yt3.ggpht.com/a-/AAuE7mAfJHMQs2qbx4WdNct9dmdCZylRBiqjhaluYA=s900-mo-c-c0xffffffff-rj-k-no" alt="">
+                            </div>
+                            <div class="a-icons">
+                                <img src="https://yt3.ggpht.com/a/AGF-l79YZh4qHafChjpt-61gwPeD3RMT49IuQ8aq=s900-c-k-c0xffffffff-no-rj-mo" alt="">
+                            </div>
+                            <div class="a-icons">
+                                <img src="https://yt3.ggpht.com/a-/AAuE7mAfJHMQs2qbx4WdNct9dmdCZylRBiqjhaluYA=s900-mo-c-c0xffffffff-rj-k-no" alt="">
+                            </div>
+                            <div class="a-icons">
+                                <img src="https://png.pngtree.com/png-vector/20190215/ourmid/pngtree-new-mood-music-logo-apps-png-image_691919.jpg " alt="">
+                                
+                            </div>
+                            <div class="a-icons">
+                                <img src="https://yt3.ggpht.com/a-/AAuE7mAfJHMQs2qbx4WdNct9dmdCZylRBiqjhaluYA=s900-mo-c-c0xffffffff-rj-k-no" alt="">
+                            </div>
+                            <div class="a-icons">
+                                <img src="https://entodomusiccom.files.wordpress.com/2020/12/retro_songs_collection-_vol._1.png " alt="">
+                                
+                            </div>
+                            
+                           
+                        </div>
+                    </div>
+
+                    <div class="language english">
+                        <!-- latest english section -->
+                        <h1 class="language-heading">
+                            Latest English
+                        </h1>
+                        <!-- contents of latest english -->
+                        <div class="language-content">
+                            <div>
+                                <img src="https://www.celebritynews.wiki/wp-content/uploads/images-66.jpeg">
+                                <p>Mood</p>
+                                <p>Dec 22,2020</p>
+                            </div>
+                            <div>
+                                <img src="https://www.celebritynews.wiki/wp-content/uploads/images-66.jpeg">
+
+                                <p>Willow</p>
+                                <p>Dec 22,2020</p>
+                            </div>
+                            <div>
+                                <img src="https://www.celebritynews.wiki/wp-content/uploads/images-66.jpeg">
+
+                                <p>Lonely</p>
+                                <p>Dec 22,2020</p>
+                            </div>
+                            <div>
+                                <img src="https://www.celebritynews.wiki/wp-content/uploads/images-66.jpeg">
+
+                                <p>Life Goes On</p>
+                                <p>Dec 22,2020</p>
+                            </div>
+                            <div>
+                                <img src="https://www.celebritynews.wiki/wp-content/uploads/images-66.jpeg">
+
+                                <p>Afterglow</p>
+                                <p>Dec 22,2020</p>
+                            </div>
+                            <div>
+                                <img src="https://www.celebritynews.wiki/wp-content/uploads/images-66.jpeg">
+
+                                <p>Wonder</p>
+                                <p>Dec 22,2020</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                     <!-- this is the hindi section -->
+            <div class="language hindi">
+                <!-- hindi section heading -->
+                <h1 class="language-heading">
+                    Latest Hindi
+                </h1>
+                <!-- hindi section contents -->
+                <div class="language-content">
+
+                    <div>
+                        <img src="https://i.pinimg.com/originals/d6/c7/df/d6c7dfb4d70b3404c9ba2df201677bae.jpg">
+                        <p>Power Of Dreams</p>
+                        <p>Dec 22,2020</p>
+                    </div>
+                    <div>
+                        <img src="https://i.ytimg.com/vi/4Kwwfx3HyXY/maxresdefault.jpg">
+                        <p>Nayan</p>
+                        <p>Dec 22,2020</p>
+                    </div>
+                    <div>
+                        <img src="http://a10.gaanacdn.com/images/song/57/21534857/crop_480x480_1516001106.jpg">
+                        <p>Burjkhalifa</p>
+                        <p>Dec 22,2020</p>
+                    </div>
+                    <div>
+                        <img src="https://i.pinimg.com/originals/d6/c7/df/d6c7dfb4d70b3404c9ba2df201677bae.jpg">
+
+                        <p>Genda Phool</p>
+                        <p>Dec 22,2020</p>
+                    </div>
+                    <div>
+                        <img src="http://a10.gaanacdn.com/images/song/57/21534857/crop_480x480_1516001106.jpg">
+
+                        <p>Naach Meri Rani</p>
+                        <p>Dec 22,2020</p>
+                    </div>
+                    <div>
+                        <img src="https://i.pinimg.com/originals/d6/c7/df/d6c7dfb4d70b3404c9ba2df201677bae.jpg">
+
+                        <p>Hum Tum</p>
+                        <p>Dec 22,2020</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </aside>
+
+
+
+                    <!-- Queue -- Section 2 -->
+
+<!-- <label for="more"><i class="fas fa-angle-double-left"></i>More</label> -->
+
+
+<aside class="aside section-2">
+    <!-- this is the section heading part. the heading will be static -->
+    <div class="heading">
+        <h1>Queue</h1>
+        <h4>
+            <a href="#queue-option-box">Queue <i class="fas fa-chevron-circle-down"></i></a>
+        </h4>
+    </div>
+    <!-- this is the queue box which will be shown when the user clicks on the Queue button -->
+    <!-- it will have 3 options, playlists, favourite songs and Close button. it will close when one clicks on the close button. -->
+    <div class="queue-options" id="queue-option-box">
+        <p><a href style="color:white; font-weight:bolder;">Playlists</a></p>
+        <hr>
+        <p><a href style="color:white; font-weight:bolder;">Favourite songs</a></p>
+        <hr>
+        <p><a href="#" style="color:red; font-weight:bolder;">Close</a></p>
+    </div>
+
+
+    <div class="playlist-content">
+        <!-- first playlist item -->
+        <div class=playlist-item>
+            <div class="left-content">
+                <!-- index -->
+                <div style="margin-right:4px;">
+                    01
+                </div>
+                <div class="coverer">
+                    <img src="http://p1.music.126.net/rwZFvuwhN5Ku8E6Ftn8NKg==/109951163389984383.jpg">
+                    <div class="play-button">
+                        <i class="fas fa-play" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <!-- name and author of the song -->
+                <div>
+                    <div>
+                        Mirage
+                    </div>
+                    <p>
+                        Flume
+                    </p>
+                </div>
+            </div>
+            <!-- like button -->
+            <div class="right-content">
+                <i class="far fa-heart"></i>
+            </div>
+        </div>
+
+         <!-- second playlist item -->
+         <div class=playlist-item>
+            <div class="left-content">
+                <div style="margin-right:4px;">
+                    02
+                </div>
+                <div class="coverer">
+                    <img src="http://p1.music.126.net/rwZFvuwhN5Ku8E6Ftn8NKg==/109951163389984383.jpg">
+                    <div class="play-button">
+                        <i class="fas fa-play" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        Worry Bout us
+                    </div>
+                    <p>
+                        Rosie Lowe
+                    </p>
+                </div>
+            </div>
+            <div class="right-content">
+                <i class="far fa-heart"></i>
+            </div>
+        </div>
+
+        <!-- third playlist item -->
+        <div class=playlist-item>
+            <div class="left-content">
+                <div style="margin-right:4px;">
+                    03
+                </div>
+                <div class="coverer">
+                    <img src="http://p1.music.126.net/rwZFvuwhN5Ku8E6Ftn8NKg==/109951163389984383.jpg">
+                    <div class="play-button">
+                        <i class="fas fa-play" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        New Skin
+                    </div>
+                    <p>
+                        Flume
+                    </p>
+                </div>
+            </div>
+            <div class="right-content">
+                <i class="far fa-heart"></i>
+            </div>
+        </div>
+        <!-- fourth playlist item -->
+        <div class=playlist-item>
+            <div class="left-content">
+                <div style="margin-right:4px;">
+                    04
+                </div>
+                <div class="coverer">
+                    <img src="http://p1.music.126.net/rwZFvuwhN5Ku8E6Ftn8NKg==/109951163389984383.jpg">
+                    <div class="play-button">
+                        <i class="fas fa-play" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        Mirage
+                    </div>
+                    <p>
+                        Else
+                    </p>
+                </div>
+            </div>
+            <div class="right-content">
+                <i class="far fa-heart"></i>
+            </div>
+        </div>
+         <!-- fifth playlist item -->
+         <div class=playlist-item>
+            <div class="left-content">
+                <div style="margin-right:4px;">
+                    05
+                </div>
+                <div class="coverer">
+                    <img src="http://p1.music.126.net/rwZFvuwhN5Ku8E6Ftn8NKg==/109951163389984383.jpg">
+                    <div class="play-button">
+                        <i class="fas fa-play" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        New Skin
+                    </div>
+                    <p>
+                        Flume
+                    </p>
+                </div>
+            </div>
+            <div class="right-content">
+                <i class="far fa-heart"></i>
+            </div>
+        </div>
+        <!-- sixth playlist item -->
+        <div class=playlist-item>
+            <div class="left-content">
+                <div style="margin-right:4px;">
+                    06
+                </div>
+                <div class="coverer">
+                    <img src="http://p1.music.126.net/rwZFvuwhN5Ku8E6Ftn8NKg==/109951163389984383.jpg">
+
+
+
+                    <div class="play-button">
+                        <i class="fas fa-play" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        Mirage
+                    </div>
+                    <p>
+                        Else
+                    </p>
+                </div>
+            </div>
+            <div class="right-content">
+                <i class="far fa-heart"></i>
+            </div>
+        </div>
+         <!-- seventh playlist item -->
+         <div class=playlist-item>
+            <div class="left-content">
+                <div style="margin-right:4px;">
+                    07
+                </div>
+                <div class="coverer">
+                    <img src="http://p1.music.126.net/rwZFvuwhN5Ku8E6Ftn8NKg==/109951163389984383.jpg">
+
+                    <div class="play-button">
+
+                        <i class="fas fa-play" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        Mirage
+                    </div>
+                    <p>
+                        Flume
+                    </p>
+                </div>
+            </div>
+            <div class="right-content">
+                <i class="far fa-heart"></i>
+            </div>
+        </div>
+        <!-- eighth playlist item -->
+        <div class=playlist-item>
+            <div class="left-content">
+                <div style="margin-right:4px;">
+                    08
+                </div>
+                <div class="coverer">
+                    <img src="http://p1.music.126.net/rwZFvuwhN5Ku8E6Ftn8NKg==/109951163389984383.jpg">
+
+                    <div class="play-button">
+                        <i class="fas fa-play" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        Worry Bout Us
+                    </div>
+                    <p>
+                        Rosie Lowe
+                    </p>
+                </div>
+            </div>
+            <div class="right-content">
+                <i class="far fa-heart"></i>
+            </div>
+        </div>
+        <!-- ninth playlist item -->
+        <div class=playlist-item>
+            <div class="left-content">
+                <div style="margin-right:4px;">
+                    09
+                </div>
+                <div class="coverer">
+                    <img src="http://p1.music.126.net/rwZFvuwhN5Ku8E6Ftn8NKg==/109951163389984383.jpg">
+
+                    <div class="play-button">
+                        <i class="fas fa-play" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        New Skin
+                    </div>
+                    <p>
+                        Flume
+                    </p>
+                </div>
+            </div>
+            <div class="right-content">
+                <i class="far fa-heart"></i>
+            </div>
+        </div>
+        <!-- tenth playlist item -->
+        <div class=playlist-item>
+            <div class="left-content">
+                <div style="margin-right:4px;">
+                    10
+                </div>
+                <div class="coverer">
+                    <img src="http://p1.music.126.net/rwZFvuwhN5Ku8E6Ftn8NKg==/109951163389984383.jpg">
+
+                    <div class="play-button">
+                        <i class="fas fa-play" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        Worry Bout Us
+                    </div>
+                    <p>
+                        Flume
+                    </p>
+                </div>
+            </div>
+            <div class="right-content">
+                <i class="far fa-heart"></i>
+            </div>
+        </div>
+        <!-- eleventh playlist item -->
+        <div class=playlist-item>
+            <div class="left-content">
+                <div style="margin-right:4px;">
+                    11
+                </div>
+                <div class="coverer">
+                    <img src="http://p1.music.126.net/rwZFvuwhN5Ku8E6Ftn8NKg==/109951163389984383.jpg">
+
+
+                    <div class="play-button">
+
+                        <i class="fas fa-play" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        New Skin
+                    </div>
+                    <p>
+                        Flume
+                    </p>
+                </div>
+            </div>
+            <div class="right-content">
+                <i class="far fa-heart"></i>
+            </div>
+        </div>
+         <!-- twelfth playlist item -->
+         <div class=playlist-item>
+            <div class="left-content">
+                <div style="margin-right:4px;">
+                    12
+                </div>
+                <div class="coverer">
+                    <img src="http://p1.music.126.net/rwZFvuwhN5Ku8E6Ftn8NKg==/109951163389984383.jpg">
+
+                    <div class="play-button">
+                        <i class="fas fa-play" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        Mirage
+                    </div>
+                    <p>
+                        Else
+                    </p>
+                </div>
+            </div>
+            <div class="right-content">
+                <i class="far fa-heart"></i>
+            </div>
+        </div>
+    </div>
+</aside>
+</main>
+
+    </body>
+    </html>
