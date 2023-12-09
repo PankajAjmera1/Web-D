@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="board"></div>
+<button id="rollDice">Roll Dice</button>
+<button id="reset">Reset</button>
+<p id="message"></p>
+    <script>
+      
+
+
+
+const board = document.getElementById('board');
+let pointer = 1;
+
+for (let row = 1; row <= 10; row++) {
+  for (let col = (row - 1) * 10 + 1; col <= row * 10; col++) {
+    const box = document.createElement('div');
+    box.classList.add('box');
+    box.textContent = col;
+    
+    if ((row % 2 === 0 && col % 2 === 0) || (row % 2 !== 0 && col % 2 !== 0)) {
+      box.classList.add('white');
+    } else {
+      box.classList.add('black');
+      box.style.color = 'white';
+    }
+    
+    if (col === pointer) {
+      box.classList.add('pointer');
+      
+    }
+    
+    board.appendChild(box);
+  }
+}
+
+// Roll the dice
+// Roll the dice
+const rollDiceButton = document.getElementById('rollDice');
+const message = document.getElementById('message');
+
+function rollDice() {
+  const diceNumber = Math.floor(Math.random() * 6) + 1;
+  pointer += diceNumber;
+
+  if (pointer > 100) {
+    pointer -= diceNumber;
+  }
+
+  message.textContent = `You rolled a ${diceNumber}. Current position: ${pointer}`;
+
+  // Reset background color of all boxes
+  const boxes = document.querySelectorAll('.box');
+  boxes.forEach(box => {
+    box.classList.remove('pointer');
+    box.style.width = '';
+    box.style.height = '';
+  });
+
+  // Set background color of current position box to red and make it smaller
+  const currentBox = document.querySelector(`.box:nth-child(${pointer})`);
+  currentBox.classList.add('pointer');
+
+  if (pointer === 100) {
+    message.textContent = 'Congratulations! You won!';
+  }
+}
+
+rollDiceButton.addEventListener('click', rollDice);
+
+document.addEventListener('keydown', (event) => {
+  if (event.code === 'Space') {
+    rollDice();
+  }
+});
+
+  // Reset button
+  const resetButton = document.getElementById('reset');
+        resetButton.addEventListener('click', () => {
+            pointer = 1;
+            message.textContent = '';
+            const boxes = document.querySelectorAll('.box');
+            boxes.forEach(box => {
+                box.classList.remove('pointer');
+                box.style.width = '';
+                box.style.height = '';
+            });
+            const initialBox = document.querySelector('.box:nth-child(1)');
+            initialBox.classList.add('pointer');
+          });
+
+    </script>
+</body>
+</html>
